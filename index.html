@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Marbles & Granite</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <a href="" class="nav-logo">
+          <span class="nav-logo-text">Marble & Granite</span>
+        </a>
+        <div class="nav-menu" id="navMenu">
+          <span class="nav-title">Menu</span>
+          <h3 class="nav-name">LOGO</h3>
+          <ul class="nav-list">
+            <li>
+              <a href="#home" class="nav-link" id="navLink">HOME</a>
+            </li>
+            <li>
+              <a href="#marble" class="nav-link" id="navLink">MARBLE</a>
+            </li>
+            <li>
+              <a href="#granite" class="nav-link" id="navLink">GRANITE</a>
+            </li>
+            <li>
+              <a href="#products" class="nav-link" id="navLink">PRODUCTS</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link" id="navLink">ABOUT US</a>
+            </li>
+            <li>
+              <a href="#gallery" class="nav-link" id="navLink">GALLERY</a>
+            </li>
+            <li>
+              <a href="#videos" class="nav-link" id="navLink">VIDEOS</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link" id="navLink">CONTACT US</a>
+            </li>
+          </ul>
+
+          <div class="nav-close" onclick="showMenu(false)">
+            <i class="ri-close-line"></i>
+          </div>
+
+          <!-- Toggle Button -->
+        </div>
+        <div class="nav-toggle" onclick="showMenu(true)">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="intro-container">
+          <div class="intro">
+            <div class="text-container">
+              <div class="heading-container">
+                <h1>Finest Quality</h1>
+              </div>
+              <div class="subtitle-container">
+                <h2>Marble and Granite</h2>
+              </div>
+            </div>
+            <div class="button-container">
+              <button>Enquire Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="marble">
+        <div class="stone-container container">
+          <div class="stone">
+            <div class="heading-container">
+              <h2>Marble</h2>
+            </div>
+            <div class="stone-grid-container">
+              <div class="stone-grid">
+                <div class="stone-item">
+                  <div class="image-container">
+                    <img
+                      src="./assets/marble/white-marble.jpg"
+                      alt="white marble"
+                    />
+                  </div>
+                  <h3>White Marble</h3>
+                </div>
+                <div class="stone-item">
+                  <div class="image-container">
+                    <img
+                      src="./assets/marble/italian-marble.jpg"
+                      alt="italian marble"
+                    />
+                  </div>
+                  <h3>Italian Marble</h3>
+                </div>
+                <div class="stone-item">
+                  <div class="image-container">
+                    <img
+                      src="./assets/marble/black-marble.jpg"
+                      alt="black marble"
+                    />
+                  </div>
+                  <h3>Black Marble</h3>
+                </div>
+                <div class="stone-item">
+                  <div class="image-container">
+                    <img
+                      src="./assets/marble/engineered-marble.jpg"
+                      alt="engineered marble"
+                    />
+                  </div>
+                  <h3>Engineered Marble</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="granite">
+        <div class="stone-container container">
+          <div class="stone">
+            <div class="heading-container">
+              <h2>Granite</h2>
+            </div>
+            <div class="stone-grid-container">
+              <div class="stone-grid">
+                <div class="stone-item">
+                  <div class="image-container">
+                    <img
+                      src="./assets/granite/white-granite.jpg"
+                      alt="white granite"
+                    />
+                  </div>
+                  <h3>White Granite</h3>
+                </div>
+                <div class="stone-item">
+                  <div class="image-container">
+                    <img
+                      src="./assets/granite/multi-color-granite.jpg"
+                      alt="multi-color granite"
+                    />
+                  </div>
+                  <h3>Multi-color Granite</h3>
+                </div>
+                <div class="stone-item">
+                  <div class="image-container">
+                    <img
+                      src="./assets/granite/ivory-granite.jpg"
+                      alt="ivory granite"
+                    />
+                  </div>
+                  <h3>Ivory Granite</h3>
+                </div>
+                <div class="stone-item">
+                  <div class="image-container">
+                    <img
+                      src="./assets/granite/granite-blocks.jpg"
+                      alt="granite blocks"
+                    />
+                  </div>
+                  <h3>Granite Blocks</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="products">
+        <div class="stone-container">
+          <div class="stone product">
+            <div class="heading-container">
+              <h2>Products</h2>
+            </div>
+            <div class="stone-grid-container">
+              <div class="stone-grid" id="productList"></div>
+            </div>
+            <button style class="prev-btn" id="prevBtn">
+              <i class="ri-arrow-left-s-line"></i>
+            </button>
+            <button id="nextBtn" class="next-btn">
+              <i class="ri-arrow-right-s-line"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="about-container container">
+          <div class="about">
+            <img src="./assets/about.jpg" />
+            <div class="text-container">
+              <div class="heading-container">
+                <h2>About Us</h2>
+              </div>
+              <div class="subtitle-container">
+                <p>
+                  We, dummy company, situated at area, city, state are a leading
+                  supplier of first class stone around the world. We stock a
+                  wide variety of natural stone slabs and tiles. The wide range
+                  of stone product includes granite, marble and many more. We
+                  are always on the leading edge of design, and strive to
+                  satisfy the most discriminating tastes. We are dedicated to
+                  offering unparalleled quality and service to designers and
+                  architects.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <div class="gallery-container container">
+          <div class="gallery">
+            <div class="heading-container">
+              <h2>Gallery</h2>
+            </div>
+            <ul class="photo-list">
+              <li>
+                <img src="./assets/gallery/gallery1.jpg" alt="Photo 1" />
+              </li>
+              <li>
+                <img src="./assets/gallery/gallery2.jpg" alt="Photo 2" />
+              </li>
+              <li>
+                <img src="./assets/gallery/gallery3.jpg" alt="Photo 2" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="videos">
+        <div class="videos-container container">
+          <div class="video">
+            <div class="heading-container">
+              <h2>Videos</h2>
+            </div>
+            <div class="content-container">
+              <div class="video-container">
+                <div class="video-iframe-container">
+                  <iframe
+                    id="video-player1"
+                    src="https://www.youtube.com/embed/etra7N-W4TA?si=cDbLQFIZdm2DO5Ks?autoplay=1&mute=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video-title-container">
+                  <p>What Are The Different Types Of Marble</p>
+                </div>
+              </div>
+              <div class="video-container">
+                <div class="video-iframe-container">
+                  <iframe
+                    id="video-player2"
+                    src="https://www.youtube.com/embed/t4v1LlqZVu0?si=V9yHIUq17H9rMPXu?autoplay=1&mute=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <div class="video-title-container">
+                  <p>Difference Between Marble & Granite Stone</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-container container">
+          <div class="contact">
+            <div class="heading-container">
+              <h2>Contact Us</h2>
+            </div>
+            <div class="contact-content">
+              <div class="contact-side-container">
+                <div class="contact-details">
+                  <div class="contact-info">
+                    <div class="info-container">
+                      <div class="icon-container">
+                        <i class="ri-map-pin-line"></i>
+                      </div>
+                      <div class="text-container">
+                        <div class="info">
+                          <p>Our Office Address</p>
+                        </div>
+                        <div class="detailed-info">
+                          <small>Malad West, Mumbai, Maharashtra 400064</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-info">
+                    <div class="info-container">
+                      <div class="icon-container">
+                        <i class="ri-mail-line"></i>
+                      </div>
+                      <div class="text-container">
+                        <div class="info">
+                          <p>General Enquiries</p>
+                        </div>
+                        <div class="detailed-info">
+                          <small>contact@mysites.com</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-info">
+                    <div class="info-container">
+                      <div class="icon-container">
+                        <i class="ri-phone-line"></i>
+                      </div>
+                      <div class="text-container">
+                        <div class="info">
+                          <p>Call Us</p>
+                        </div>
+                        <div class="detailed-info">
+                          <small>+91-88888888</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-info">
+                    <div class="info-container">
+                      <div class="icon-container">
+                        <i class="ri-time-line"></i>
+                      </div>
+                      <div class="text-container">
+                        <div class="info">
+                          <p>Our Timing</p>
+                        </div>
+                        <div class="detailed-info">
+                          <small>
+                            <span>Mon - Sun :&nbsp;</span>
+                            <span>09:00 AM - 09:00 PM</span>
+                          </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-side-container">
+                <div class="form-container">
+                  <form action="">
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="YOUR NAME"
+                    />
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="YOUR EMAIL"
+                    />
+                    <input
+                      type="text"
+                      name="contact-number"
+                      id="contact-number"
+                      placeholder="YOUR CONTACT NO."
+                    />
+                    <textarea
+                      rows="1"
+                      name="message"
+                      id="message"
+                      placeholder="YOUR MESSAGE"
+                    ></textarea>
+                    <div class="button-container">
+                      <button type="submit">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="map">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.77757381371!2d31.17623470625281!3d30.05946286860127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1720052822409!5m2!1sen!2seg"
+            width="100%"
+            height="380px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-and-policy-container">
+          <div class="footer">
+            <div class="footer-links">
+              <div class="footer-subtitle">
+                <small>USEFUL LINKS</small>
+              </div>
+              <ul class="link-list">
+                <li>
+                  <a href="#home" class="nav-link" id="navLink">HOME</a>
+                </li>
+                <li>
+                  <a href="#marble" class="nav-link" id="navLink">MARBLE</a>
+                </li>
+                <li>
+                  <a href="#granite" class="nav-link" id="navLink">GRANITE</a>
+                </li>
+                <li>
+                  <a href="#products" class="nav-link" id="navLink">PRODUCTS</a>
+                </li>
+                <li>
+                  <a href="#about" class="nav-link" id="navLink">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="#gallery" class="nav-link" id="navLink">GALLERY</a>
+                </li>
+                <li>
+                  <a href="#videos" class="nav-link" id="navLink">VIDEOS</a>
+                </li>
+                <li>
+                  <a href="#contact" class="nav-link" id="navLink"
+                    >CONTACT US</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-contact-container">
+              <div class="footer-contact">
+                <div class="footer-subtitle">
+                  <small>CONTACT</small>
+                </div>
+                <small>1111111111</small>
+              </div>
+              <div class="footer-email">
+                <small>sample@example.com</small>
+              </div>
+            </div>
+            <div class="footer-social">
+              <div class="footer-social-subtitle">
+                <small>CONNECT</small>
+              </div>
+              <div class="footer-social-content">
+                <a href="https://www.facebook.com" target="_blank">
+                  <i class="ri-facebook-circle-fill"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                  <i class="ri-linkedin-box-fill"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr class="divider" />
+          <div class="footer-policy">
+            <small>
+              © Copyrights 2024.Universal Marbles.All Rights Reserved.
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>

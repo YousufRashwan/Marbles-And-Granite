@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Product Details</title>
+  </head>
+  <body>
+    <header id="header" class="single-product-header">
+      <nav>
+        <a href="/" class="nav-logo">
+          <span class="nav-logo-text">LOGO</span>
+        </a>
+        <div class="nav-menu" id="navMenu">
+          <span class="nav-title">Menu</span>
+          <h3 class="nav-name">LOGO</h3>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="/#home" class="nav-link" id="navLink">HOME</a>
+            </li>
+            <li>
+              <a href="/#marble" class="nav-link" id="navLink">MARBLE</a>
+            </li>
+            <li>
+              <a href="/#granite" class="nav-link" id="navLink">GRANITE</a>
+            </li>
+            <li>
+              <a href="/#products" class="nav-link" id="navLink">PRODUCTS</a>
+            </li>
+            <li>
+              <a href="/#about" class="nav-link" id="navLink">ABOUT US</a>
+            </li>
+            <li>
+              <a href="/#gallery" class="nav-link" id="navLink">GALLERY</a>
+            </li>
+            <li>
+              <a href="/#videos" class="nav-link" id="navLink">VIDEOS</a>
+            </li>
+            <li>
+              <a href="/#contact" class="nav-link" id="navLink">CONTACT US</a>
+            </li>
+          </ul>
+          <div class="nav-close" onclick="showMenu(false)">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="nav-toggle" onclick="showMenu(true)">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </nav>
+    </header>
+    <main class="product-main">
+      <section>
+        <div class="single-product-container container">
+          <div class="single-product-section">
+            <div class="single-product">
+              <div class="product-img-container">
+                <img id="product-img" />
+              </div>
+              <div class="product-text-container">
+                <div class="product-heading-container">
+                  <p id="product-name"></p>
+                </div>
+                <div class="product-button-container">
+                  <button>
+                    <span>
+                      <i class="ri-mail-line"></i>
+                    </span>
+                    <span>Send Enquiry</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-and-policy-container">
+          <div class="footer">
+            <div class="footer-links">
+              <div class="footer-subtitle">
+                <small>USEFUL LINKS</small>
+              </div>
+              <ul class="link-list">
+                <li>
+                  <a href="/#home" class="nav-link" id="navLink">HOME</a>
+                </li>
+                <li>
+                  <a href="/#marble" class="nav-link" id="navLink">MARBLE</a>
+                </li>
+                <li>
+                  <a href="/#granite" class="nav-link" id="navLink">GRANITE</a>
+                </li>
+                <li>
+                  <a href="/#products" class="nav-link" id="navLink"
+                    >PRODUCTS</a
+                  >
+                </li>
+                <li>
+                  <a href="/#about" class="nav-link" id="navLink">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="/#gallery" class="nav-link" id="navLink">GALLERY</a>
+                </li>
+                <li>
+                  <a href="/#videos" class="nav-link" id="navLink">VIDEOS</a>
+                </li>
+                <li>
+                  <a href="/#contact" class="nav-link" id="navLink"
+                    >CONTACT US</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer-contact-container">
+              <div class="footer-contact">
+                <div class="footer-subtitle">
+                  <small>CONTACT</small>
+                </div>
+                <small>1111111111</small>
+              </div>
+              <div class="footer-email">
+                <small>sample@example.com</small>
+              </div>
+            </div>
+            <div class="footer-social">
+              <div class="footer-social-subtitle">
+                <small>CONNECT</small>
+              </div>
+              <div class="footer-social-content">
+                <a href="https://www.facebook.com" target="_blank">
+                  <i class="ri-facebook-circle-fill"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                  <i class="ri-linkedin-box-fill"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr class="divider" />
+          <div class="footer-policy">
+            <small>
+              © Copyrights 2024.Universal Marbles.All Rights Reserved.
+            </small>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="product.js"></script>
+  </body>
+</html>
