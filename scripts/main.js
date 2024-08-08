@@ -27,37 +27,37 @@ const products = [
     id: 1,
     imageUrl: "./assets/products/black-marquina.jpg",
     name: "Black Marquina",
-    url: `product-details.html?id=1`,
+    url: `pages/product-details.html?id=1`,
   },
   {
     id: 2,
     imageUrl: "./assets/products/brown-onyx.jpg",
     name: "Brown Onyx",
-    url: `product-details.html?id=2`,
+    url: `pages/product-details.html?id=2`,
   },
   {
     id: 3,
     imageUrl: "./assets/products/armani-grey.jpg",
     name: "Armani Grey",
-    url: `product-details.html?id=3`,
+    url: `pages/product-details.html?id=3`,
   },
   {
     id: 4,
     imageUrl: "./assets/products/blue-azul.jpg",
     name: "Blue Azul",
-    url: `product-details.html?id=4`,
+    url: `pages/product-details.html?id=4`,
   },
   {
     id: 5,
     imageUrl: "./assets/products/bala-flower.jpg",
     name: "Bala Flower(s)",
-    url: `product-details.html?id=5`,
+    url: `pages/product-details.html?id=5`,
   },
   {
     id: 6,
     imageUrl: "./assets/products/bottochino-classico.jpg",
     name: "Bottochino Classico",
-    url: `product-details.html?id=6`,
+    url: `pages/product-details.html?id=6`,
   },
 ];
 

@@ -25,32 +25,32 @@ navLinks.forEach((navLink) => {
 const products = [
   {
     id: 1,
-    imageUrl: "./assets/products/black-marquina.jpg",
+    imageUrl: "../assets/products/black-marquina.jpg",
     name: "Black Marquina",
   },
   {
     id: 2,
-    imageUrl: "./assets/products/brown-onyx.jpg",
+    imageUrl: "../assets/products/brown-onyx.jpg",
     name: "Brown Onyx",
   },
   {
     id: 3,
-    imageUrl: "./assets/products/armani-grey.jpg",
+    imageUrl: "../assets/products/armani-grey.jpg",
     name: "Armani Grey",
   },
   {
     id: 4,
-    imageUrl: "./assets/products/blue-azul.jpg",
+    imageUrl: "../assets/products/blue-azul.jpg",
     name: "Blue Azul",
   },
   {
     id: 5,
-    imageUrl: "./assets/products/bala-flower.jpg",
+    imageUrl: "../assets/products/bala-flower.jpg",
     name: "Bala Flower(s)",
   },
   {
     id: 6,
-    imageUrl: "./assets/products/bottochino-classico.jpg",
+    imageUrl: "../assets/products/bottochino-classico.jpg",
     name: "Bottochino Classico",
   },
 ];
